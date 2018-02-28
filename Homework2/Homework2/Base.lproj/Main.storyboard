@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LG5-Ia-Doz" userLabel="BackgroundButton">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <connections>
+                                    <action selector="backgroundTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="06I-zC-4JV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which school is better?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSH-pI-WjM" userLabel="SchoolLabel">
+                                <rect key="frame" x="20" y="28" width="374" height="29.666666666666671"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4le-50-hOo" userLabel="NameTF">
+                                <rect key="frame" x="20" y="77.666666666666671" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="avr-oc-BsX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="keyboardDone:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="j2Z-JQ-dIf"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwy-mL-gSx" userLabel="ResetButton">
+                                <rect key="frame" x="20" y="678" width="374" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Lw-kT-nWz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ResetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="io7-UH-Qez"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="89j-9F-bSW" userLabel="MessageLabel">
+                                <rect key="frame" x="20" y="411" width="374" height="242"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="left" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfY-av-dwd" userLabel="USCButton">
+                                <rect key="frame" x="20" y="147.66666666666666" width="374" height="108.99999999999997"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DfY-av-dwd" secondAttribute="height" multiplier="343:100" id="2bh-sl-wRK"/>
+                                </constraints>
+                                <state key="normal" image="usc">
+                                    <color key="titleColor" red="0.0084693702590000006" green="0.64537070490000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0084693702590000006" green="0.64537070490000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="USCButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BtC-ih-r79"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="right" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFc-x7-Mdi" userLabel="UCLAButton">
+                                <rect key="frame" x="20" y="276.66666666666669" width="374" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EFc-x7-Mdi" secondAttribute="height" multiplier="343:100" id="Uu3-rm-Liu"/>
+                                </constraints>
+                                <state key="normal" image="ucla"/>
+                                <connections>
+                                    <action selector="UCLAButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Tz-cp-fZc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="89j-9F-bSW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="69g-B5-gbF"/>
+                            <constraint firstItem="DfY-av-dwd" firstAttribute="top" secondItem="4le-50-hOo" secondAttribute="bottom" constant="40" id="6NY-a7-qgv"/>
+                            <constraint firstItem="fwy-mL-gSx" firstAttribute="top" secondItem="89j-9F-bSW" secondAttribute="bottom" constant="25" id="AxF-uR-YeK"/>
+                            <constraint firstItem="fwy-mL-gSx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="H83-uq-Q8d"/>
+                            <constraint firstItem="LG5-Ia-Doz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KGB-J1-zFc"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="fwy-mL-gSx" secondAttribute="bottom" constant="8" id="OWX-un-4J3"/>
+                            <constraint firstItem="PSH-pI-WjM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ouh-rA-0lc"/>
+                            <constraint firstItem="4le-50-hOo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P2c-G6-OCL"/>
+                            <constraint firstItem="89j-9F-bSW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QYb-gV-Mh8"/>
+                            <constraint firstItem="PSH-pI-WjM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Qr7-1d-4fD"/>
+                            <constraint firstItem="4le-50-hOo" firstAttribute="top" secondItem="PSH-pI-WjM" secondAttribute="bottom" constant="20" id="T74-LC-02y"/>
+                            <constraint firstItem="89j-9F-bSW" firstAttribute="top" secondItem="EFc-x7-Mdi" secondAttribute="bottom" constant="25" id="U9R-OU-Dki"/>
+                            <constraint firstItem="PSH-pI-WjM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="U9f-9y-HbE"/>
+                            <constraint firstItem="DfY-av-dwd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YKk-d0-UcM"/>
+                            <constraint firstItem="4le-50-hOo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ael-1t-f1j"/>
+                            <constraint firstItem="LG5-Ia-Doz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b86-mf-gqD"/>
+                            <constraint firstItem="DfY-av-dwd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ekY-x9-PUV"/>
+                            <constraint firstItem="EFc-x7-Mdi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="l6x-U7-q1U"/>
+                            <constraint firstItem="EFc-x7-Mdi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oRm-Oo-xKO"/>
+                            <constraint firstItem="LG5-Ia-Doz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="s7o-dL-9H4"/>
+                            <constraint firstItem="LG5-Ia-Doz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sTk-Cd-SYi"/>
+                            <constraint firstItem="EFc-x7-Mdi" firstAttribute="top" secondItem="DfY-av-dwd" secondAttribute="bottom" constant="20" id="uVC-qD-SgO"/>
+                            <constraint firstItem="fwy-mL-gSx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zFo-D7-oCL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="89j-9F-bSW" id="w7Y-bj-B7T"/>
+                        <outlet property="nameTextField" destination="4le-50-hOo" id="pg8-3F-Xzh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="132.88043478260872"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ucla" width="100" height="100"/>
+        <image name="usc" width="100" height="100"/>
+    </resources>
+</document>
